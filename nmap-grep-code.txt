@@ -1,0 +1,100 @@
+[gnorton@finnean initial-tests]$ python
+Python 2.4.3 (#1, Nov 11 2010, 13:34:43)
+[GCC 4.1.2 20080704 (Red Hat 4.1.2-48)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> fd = open('intense.grep', 'r')
+>>> lines = fd.readlines()
+>>> len(lines)
+3
+>>> dir(lines)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__delslice__', '__doc__', '__eq__', '__ge__', '__getattribute__', '__getitem__', '__getslice__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__setslice__', '__str__', 'append', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> print lines.remove.__doc__
+L.remove(value) -- remove first occurrence of value
+>>> del lines[0]
+>>> len(lines)
+2
+>>> del lines[1]
+>>> lines
+['Host: 192.168.0.104 ()\tPorts: 22/open/tcp//ssh///, 25/open/tcp//smtp///, 80/open/tcp//http///, 110/open/tcp//pop3///, 111/open/tcp//rpcbind///, 143/open/tcp//imap///, 443/open/tcp//https///, 633/open/tcp//unknown///, 993/open/tcp//imaps///, 995/open/tcp//pop3s///, 3306/open/tcp//mysql///, 9390/open/tcp/////, 9393/open/tcp/////\tIgnored State: closed (65522)\n']
+>>> sp = lines[0].split('\t')
+>>> sp
+['Host: 192.168.0.104 ()', 'Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///, 80/open/tcp//http///, 110/open/tcp//pop3///, 111/open/tcp//rpcbind///, 143/open/tcp//imap///, 443/open/tcp//https///, 633/open/tcp//unknown///, 993/open/tcp//imaps///, 995/open/tcp//pop3s///, 3306/open/tcp//mysql///, 9390/open/tcp/////, 9393/open/tcp/////', 'Ignored State: closed (65522)\n']
+>>> print sp[0]
+Host: 192.168.0.104 ()
+>>> len(sp)
+3
+>>> print sp[2]
+Ignored State: closed (65522)
+
+>>> ports = sp[1].split(',')
+>>> ports
+['Ports: 22/open/tcp//ssh///', ' 25/open/tcp//smtp///', ' 80/open/tcp//http///', ' 110/open/tcp//pop3///', ' 111/open/tcp//rpcbind///', ' 143/open/tcp//imap///', ' 443/open/tcp//https///', ' 633/open/tcp//unknown///', ' 993/open/tcp//imaps///', ' 995/open/tcp//pop3s///', ' 3306/open/tcp//mysql///', ' 9390/open/tcp/////', ' 9393/open/tcp/////']
+>>> for p in ports:
+...     print p
+...
+Ports: 22/open/tcp//ssh///
+ 25/open/tcp//smtp///
+ 80/open/tcp//http///
+ 110/open/tcp//pop3///
+ 111/open/tcp//rpcbind///
+ 143/open/tcp//imap///
+ 443/open/tcp//https///
+ 633/open/tcp//unknown///
+ 993/open/tcp//imaps///
+ 995/open/tcp//pop3s///
+ 3306/open/tcp//mysql///
+ 9390/open/tcp/////
+ 9393/open/tcp/////
+>>> for p in ports:
+...     p.replace('/', ' ')
+...     print p
+...
+'Ports: 22 open tcp  ssh   '
+Ports: 22/open/tcp//ssh///
+' 25 open tcp  smtp   '
+ 25/open/tcp//smtp///
+' 80 open tcp  http   '
+ 80/open/tcp//http///
+' 110 open tcp  pop3   '
+ 110/open/tcp//pop3///
+' 111 open tcp  rpcbind   '
+ 111/open/tcp//rpcbind///
+' 143 open tcp  imap   '
+ 143/open/tcp//imap///
+' 443 open tcp  https   '
+ 443/open/tcp//https///
+' 633 open tcp  unknown   '
+ 633/open/tcp//unknown///
+' 993 open tcp  imaps   '
+ 993/open/tcp//imaps///
+' 995 open tcp  pop3s   '
+ 995/open/tcp//pop3s///
+' 3306 open tcp  mysql   '
+ 3306/open/tcp//mysql///
+' 9390 open tcp     '
+ 9390/open/tcp/////
+' 9393 open tcp     '
+ 9393/open/tcp/////
+>>> len(ports)
+13
+>>> p
+' 9393/open/tcp/////'
+>>> for p in ports:
+...     x = p.replace('/', ' ')
+...     print x
+...
+Ports: 22 open tcp  ssh
+ 25 open tcp  smtp
+ 80 open tcp  http
+ 110 open tcp  pop3
+ 111 open tcp  rpcbind
+ 143 open tcp  imap
+ 443 open tcp  https
+ 633 open tcp  unknown
+ 993 open tcp  imaps
+ 995 open tcp  pop3s
+ 3306 open tcp  mysql
+ 9390 open tcp
+ 9393 open tcp
+>>>   
+

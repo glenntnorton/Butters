@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+div#side_col {margin-left:8px; width:172px; float:left; display:inline;}
+div#main_col {height:1em;}
+ul#side_nav li a, ul#side_nav li a:visited {display:block; padding:4px 8px; text-decoration:none; border-bottom:1px solid #fff; height:1em;}
+
+table.data {width:98%;}
+
+ul.tab_nav {padding-top:3px;}
+ul.tab_nav li {margin:0; padding:0; list-style:none; display:inline; float:left;}
+ul.tab_nav li {position:relative; top:1px;}
+ul.tab_nav li a, ul.tab_nav li a:visited {display:inline;}
+ul.tab_nav li a.selected, ul.tab_nav li a.selected:visited {}
+
+form select {border:1px solid #ccc; font:normal 12px/16px Arial, Helvetica, Sans-serif; color:#333; padding:4px 2px;}
+
+form label.input_title {float:left; display:inline; padding:2px 0; font-weight:bold; width:140px; }
+form div.input_warning {right:8px;}
+form div.inputDirection {right:8px;}
+form input.width {width:480px; margin-right:0;}
+form input.text {}
+form input.button {padding:0;}
+
+button {margin-right:5px; padding:2px 0; }
+
+span.controls { display:inline-block; left:-4px; position:relative; height:0px; padding:11px 5px;}
+span.controls span.up {display:block; position:absolute; top:-2px; left:0; width:11px; height:10px; background:url(../images/tiny-up.png) no-repeat top left; overflow:hidden; text-indent:-1000px;}
+span.controls span.down {display:block; position:absolute; bottom:3px; left:0; width:11px; height:10px; background:url(../images/tiny-down.png) no-repeat top left; overflow:hidden; text-indent:-1000px;}

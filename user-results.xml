@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+    <results>
+        <result>
+            <host name="192.168.0.104" ip="192.168.0.104"/>
+            <date>
+                <start>Tue Dec 14 00:14:38 2010</start>
+                <end>Tue Dec 14 00:45:40 2010</end>
+            </date>
+            <ports>
+                <port protocol="udp" portid="111">
+                    <service name="sunrpc" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.11111</id>
+                        <data>
+
+                            RPC program #100000 version 2 &apos;portmapper&apos; (portmap sunrpc rpcbind) is running on this port
+
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="tcp" portid="111">
+                    <service name="sunrpc" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.11111</id>
+                        <data>
+
+                            RPC program #100000 version 2 &apos;portmapper&apos; (portmap sunrpc rpcbind) is running on this port
+
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="tcp" portid="22">
+                    <service name="ssh" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.100259</id>
+                        <data>
+
+
+
+                            Overview:
+                            The remote SSH Server supports the following SSH Protocol Versions:
+
+                            1.99
+                            2.0
+
+                            SSHv2 Fingerprint: 2a:3a:58:16:72:eb:fb:e7:cc:9e:24:a7:02:d7:3e:34
+
+
+                            Risk factor : None
+
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Hole</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.100584</id>
+                        <data>
+
+                            Overview:
+                            OpenSSH is prone to a vulnerability that allows attackers to hijack
+                            forwarded X connections.
+
+                            Successfully exploiting this issue may allow an attacker run arbitrary
+                            shell commands with the privileges of the user running the affected
+                            application.
+
+                            This issue affects OpenSSH 4.3p2
+                            other versions may also be affected.
+
+                            NOTE: This issue affects the portable version of OpenSSH and may not
+                            affect OpenSSH running on OpenBSD.
+
+                            Solution:
+                            Updates are available. Please see the references for more information.
+
+                            References:
+                            http://www.securityfocus.com/bid/28444
+                            http://support.apple.com/kb/HT3137
+                            http://www.openbsd.org/errata41.html
+                            http://www.openbsd.org/errata42.html
+                            http://www.openbsd.org/errata43.html
+                            http://www.openssh.com/txt/release-5.0
+                            http://www.openssh.com
+                            http://sourceforge.net/project/shownotes.php?release_id=590180
+                            http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=463011
+                            http://www.securityfocus.com/archive/1/492447
+                            http://aix.software.ibm.com/aix/efixes/security/ssh_advisory.asc
+                            http://support.avaya.com/elmodocs2/security/ASA-2008-205.htm
+                            http://www.globus.org/mail_archive/security-announce/2008/04/msg00000.html
+                            http://support.attachmate.com/techdocs/2374.html#Security_Updates_in_7.0_SP1
+                            http://sunsolve.sun.com/search/document.do?assetkey=1-66-237444-1
+
+                            CVE : CVE-2008-1483
+                            BID : 28444
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Warning</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.100153</id>
+                        <data>
+
+
+
+                            Overview: The host is installed with OpenSSH and is prone to information
+                            disclosure vulnerability.
+
+                            Vulnerability Insight:
+                            The flaw is caused due to the improper handling of errors within an SSH session
+                            encrypted with a block cipher algorithm in the Cipher-Block Chaining &apos;CBC&apos; mode.
+
+                            Impact:
+                            Successful exploits will allow attackers to obtain four bytes of plaintext from
+                            an encrypted session.
+
+                            Impact Level: Application
+
+                            Affected Software/OS:
+                            Versions prior to OpenSSH 5.2 are vulnerable. Various versions of SSH Tectia
+                            are also affected. 
+
+                            Fix: Upgrade to higher version
+                            http://www.openssh.com/portable.html
+
+                            References:
+                            http://www.securityfocus.com/bid/32319
+
+                            Risk factor: Medium
+                            CVE : CVE-2008-5161
+                            BID : 32319
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10267</id>
+                        <data>
+
+                            Remote SSH version : SSH-2.0-OpenSSH_4.3
+
+                            Remote SSH supported authentication : publickey,gssapi-with-mic,password
+
+
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.50282</id>
+                        <data>
+
+
+                            This script will, if given a userid/password or
+                            key to the remote system, login to that system,
+                            determine the OS it is running, and for supported
+                            systems, extract the list of installed packages/rpms.
+
+                            Risk factor : None
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.90022</id>
+                        <data>
+
+                            No SSH crendentials were supplied.
+                            Hence local security checks are not enabled.
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10330</id>
+                        <data>
+
+                            An ssh server is running on this port
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="tcp" portid="25">
+                    <service name="smtp" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.11270</id>
+                        <data>
+
+
+                            Some antivirus scanners dies when they process an email with a 
+                            too long string without line breaks.
+                            Such a message was sent. If there is an antivirus on your MTA,
+                            it might have crashed. Please check its status right now, as 
+                            it is not possible to do it remotely
+
+
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.11036</id>
+                        <data>
+
+                            The file 42.zip was sent 2 times. If there is an antivirus in your MTA, it might
+                            have crashed. Please check its status right now, as it is
+                            not possible to do so remotely
+
+                            BID : 3027
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10263</id>
+                        <data>
+
+                            Remote SMTP server banner :
+                            220 finnean.com ESMTP Postfix
+
+
+
+                            This is probably: Postfix
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10330</id>
+                        <data>
+
+                            An SMTP server is running on this port
+                            Here is its banner : 
+                            220 finnean.com ESMTP Postfix
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="tcp" portid="633">
+                    <service name="servstat" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.11111</id>
+                        <data>
+
+                            RPC program #100024 version 1 &apos;status&apos; is running on this port
+
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="tcp" portid="995">
+                    <service name="pop3s" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900234</id>
+                        <data>
+
+                            Server will not supports SSLv2 Ciphers.
+
+                            Server supports SSLv3 ciphers.
+
+                            Server supports TLSv1 ciphers.
+
+                            Weak Ciphers 
+                            SSL3_RSA_NULL_MD5 : SSL_NOT_EXP
+                            SSL3_RSA_NULL_SHA : SSL_NOT_EXP
+                            SSL3_RSA_RC4_40_MD5 : SSL_EXPORT
+                            SSL3_RSA_RC2_40_MD5 : SSL_EXPORT
+                            SSL3_RSA_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_DH_DSS_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_DH_RSA_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_EDH_DSS_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_EDH_RSA_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_ADH_RC4_40_MD5 : SSL_EXPORT
+                            SSL3_ADH_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_FZA_DMS_NULL_SHA : SSL_NOT_EXP
+                            SSL3_FZA_DMS_FZA_SHA : SSL_NOT_EXP
+                            SSL3_FZA_DMS_RC4_SHA : SSL_NOT_EXP
+                            SSL3_KRB5_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_KRB5_RC2_40_CBC_SHA : SSL_EXPORT
+                            SSL3_KRB5_RC4_40_SHA : SSL_EXPORT
+                            SSL3_KRB5_DES_40_CBC_MD5 : SSL_EXPORT
+                            SSL3_KRB5_RC2_40_CBC_MD5 : SSL_EXPORT
+                            SSL3_KRB5_RC4_40_MD5 : SSL_EXPORT
+                            SSL3_RSA_EXPORT1024_WITH_RC4_56_MD5 : SSL_EXPORT
+                            SSL3_RSA_EXPORT1024_WITH_RC2_CBC_56_MD5 : SSL_EXPORT
+                            SSL3_RSA_EXPORT1024_WITH_DES_CBC_SHA : SSL_EXPORT
+                            SSL3_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA : SSL_EXPORT
+                            SSL3_DHE_DSS_EXPORT1024_WITH_RC4_56_SHA : SSL_EXPORT
+                            SSL3_RSA_WITH_SEED_SHA : SSL_NOT_EXP
+                            SSL3_DH_DSS_WITH_SEED_SHA : SSL_NOT_EXP
+                            SSL3_DH_RSA_WITH_SEED_SHA : SSL_NOT_EXP
+                            SSL3_DHE_DSS_WITH_SEED_SHA : SSL_NOT_EXP
+                            SSL3_DHE_RSA_WITH_SEED_SHA : SSL_NOT_EXP
+                            SSL3_ADH_WITH_SEED_SHA : SSL_NOT_EXP
+                            SSL3_ECDH_ECDSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            SSL3_ECDHE_ECDSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            SSL3_ECDH_RSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            SSL3_ECDHE_RSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            SSL3_ECDH_anon_WITH_NULL_SHA : SSL_NOT_EXP
+                            TLS1_RSA_NULL_MD5 : SSL_NOT_EXP
+                            TLS1_RSA_NULL_SHA : SSL_NOT_EXP
+                            TLS1_RSA_RC4_40_MD5 : SSL_EXPORT
+                            TLS1_RSA_RC2_40_MD5 : SSL_EXPORT
+                            TLS1_RSA_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_DH_DSS_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_DH_RSA_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_EDH_DSS_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_EDH_RSA_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_ADH_RC4_40_MD5 : SSL_EXPORT
+                            TLS1_ADH_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_FZA_DMS_NULL_SHA : SSL_NOT_EXP
+                            TLS1_FZA_DMS_FZA_SHA : SSL_NOT_EXP
+                            TLS1_FZA_DMS_RC4_SHA : SSL_NOT_EXP
+                            TLS1_KRB5_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_KRB5_RC2_40_CBC_SHA : SSL_EXPORT
+                            TLS1_KRB5_RC4_40_SHA : SSL_EXPORT
+                            TLS1_KRB5_DES_40_CBC_MD5 : SSL_EXPORT
+                            TLS1_KRB5_RC2_40_CBC_MD5 : SSL_EXPORT
+                            TLS1_KRB5_RC4_40_MD5 : SSL_EXPORT
+                            TLS1_RSA_EXPORT1024_WITH_RC4_56_MD5 : SSL_EXPORT
+                            TLS1_RSA_EXPORT1024_WITH_RC2_CBC_56_MD5 : SSL_EXPORT
+                            TLS1_RSA_EXPORT1024_WITH_DES_CBC_SHA : SSL_EXPORT
+                            TLS1_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA : SSL_EXPORT
+                            TLS1_DHE_DSS_EXPORT1024_WITH_RC4_56_SHA : SSL_EXPORT
+                            TLS1_RSA_WITH_SEED_SHA : SSL_NOT_EXP
+                            TLS1_DH_DSS_WITH_SEED_SHA : SSL_NOT_EXP
+                            TLS1_DH_RSA_WITH_SEED_SHA : SSL_NOT_EXP
+                            TLS1_DHE_DSS_WITH_SEED_SHA : SSL_NOT_EXP
+                            TLS1_DHE_RSA_WITH_SEED_SHA : SSL_NOT_EXP
+                            TLS1_ADH_WITH_SEED_SHA : SSL_NOT_EXP
+                            TLS1_ECDH_ECDSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            TLS1_ECDHE_ECDSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            TLS1_ECDH_RSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            TLS1_ECDHE_RSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            TLS1_ECDH_anon_WITH_NULL_SHA : SSL_NOT_EXP
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10330</id>
+                        <data>
+
+                            A pop3 server is running on this port
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10330</id>
+                        <data>
+
+                            A TLSv1 server answered on this port
+
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="tcp" portid="110">
+                    <service name="pop3" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10330</id>
+                        <data>
+
+                            A pop3 server is running on this port
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="tcp" portid="9390">
+                    <service name="otp" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900234</id>
+                        <data>
+
+                            Server will not supports SSLv2 Ciphers.
+
+                            Server will not supports SSLv3 Ciphers.
+
+                            Server will not supports TLSv1 Ciphers.
+
+                            None of the weak ciphers are supported
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.100076</id>
+                        <data>
+
+
+                            Overview:
+
+                            OpenVAS is running at this host.
+
+                            OpenVAS stands for Open Vulnerability Assessment System and is a network
+                            security scanner with associated tools like a graphical user front-end. The
+                            core component is a server with a set of network vulnerability tests (NVTs) to
+                            detect security problems in remote systems and applications. 
+                            See http://openvas.org for more information.
+
+                            Risk factor : None
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="tcp" portid="3306">
+                    <service name="mysql" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.100152</id>
+                        <data>
+
+
+
+                            Overview:
+                            MySQL, a open source database system is running at this host.
+
+                            See also:
+                            http://www.mysql.com  
+
+                            Risk factor : None
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.17975</id>
+                        <data>
+
+                            A MySQL server seems to be running on this port but it
+                            rejects connection from the openvas scanner.
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10330</id>
+                        <data>
+
+                            An unknown service is running on this port.
+                            It is usually reserved for MySQL
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="tcp" portid="993">
+                    <service name="imaps" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900234</id>
+                        <data>
+
+                            Server will not supports SSLv2 Ciphers.
+
+                            Server supports SSLv3 ciphers.
+
+                            Server supports TLSv1 ciphers.
+
+                            Weak Ciphers 
+                            SSL3_RSA_NULL_MD5 : SSL_NOT_EXP
+                            SSL3_RSA_NULL_SHA : SSL_NOT_EXP
+                            SSL3_RSA_RC4_40_MD5 : SSL_EXPORT
+                            SSL3_RSA_RC2_40_MD5 : SSL_EXPORT
+                            SSL3_RSA_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_DH_DSS_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_DH_RSA_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_EDH_DSS_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_EDH_RSA_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_ADH_RC4_40_MD5 : SSL_EXPORT
+                            SSL3_ADH_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_FZA_DMS_NULL_SHA : SSL_NOT_EXP
+                            SSL3_FZA_DMS_FZA_SHA : SSL_NOT_EXP
+                            SSL3_FZA_DMS_RC4_SHA : SSL_NOT_EXP
+                            SSL3_KRB5_DES_40_CBC_SHA : SSL_EXPORT
+                            SSL3_KRB5_RC2_40_CBC_SHA : SSL_EXPORT
+                            SSL3_KRB5_RC4_40_SHA : SSL_EXPORT
+                            SSL3_KRB5_DES_40_CBC_MD5 : SSL_EXPORT
+                            SSL3_KRB5_RC2_40_CBC_MD5 : SSL_EXPORT
+                            SSL3_KRB5_RC4_40_MD5 : SSL_EXPORT
+                            SSL3_RSA_EXPORT1024_WITH_RC4_56_MD5 : SSL_EXPORT
+                            SSL3_RSA_EXPORT1024_WITH_RC2_CBC_56_MD5 : SSL_EXPORT
+                            SSL3_RSA_EXPORT1024_WITH_DES_CBC_SHA : SSL_EXPORT
+                            SSL3_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA : SSL_EXPORT
+                            SSL3_DHE_DSS_EXPORT1024_WITH_RC4_56_SHA : SSL_EXPORT
+                            SSL3_RSA_WITH_SEED_SHA : SSL_NOT_EXP
+                            SSL3_DH_DSS_WITH_SEED_SHA : SSL_NOT_EXP
+                            SSL3_DH_RSA_WITH_SEED_SHA : SSL_NOT_EXP
+                            SSL3_DHE_DSS_WITH_SEED_SHA : SSL_NOT_EXP
+                            SSL3_DHE_RSA_WITH_SEED_SHA : SSL_NOT_EXP
+                            SSL3_ADH_WITH_SEED_SHA : SSL_NOT_EXP
+                            SSL3_ECDH_ECDSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            SSL3_ECDHE_ECDSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            SSL3_ECDH_RSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            SSL3_ECDHE_RSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            SSL3_ECDH_anon_WITH_NULL_SHA : SSL_NOT_EXP
+                            TLS1_RSA_NULL_MD5 : SSL_NOT_EXP
+                            TLS1_RSA_NULL_SHA : SSL_NOT_EXP
+                            TLS1_RSA_RC4_40_MD5 : SSL_EXPORT
+                            TLS1_RSA_RC2_40_MD5 : SSL_EXPORT
+                            TLS1_RSA_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_DH_DSS_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_DH_RSA_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_EDH_DSS_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_EDH_RSA_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_ADH_RC4_40_MD5 : SSL_EXPORT
+                            TLS1_ADH_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_FZA_DMS_NULL_SHA : SSL_NOT_EXP
+                            TLS1_FZA_DMS_FZA_SHA : SSL_NOT_EXP
+                            TLS1_FZA_DMS_RC4_SHA : SSL_NOT_EXP
+                            TLS1_KRB5_DES_40_CBC_SHA : SSL_EXPORT
+                            TLS1_KRB5_RC2_40_CBC_SHA : SSL_EXPORT
+                            TLS1_KRB5_RC4_40_SHA : SSL_EXPORT
+                            TLS1_KRB5_DES_40_CBC_MD5 : SSL_EXPORT
+                            TLS1_KRB5_RC2_40_CBC_MD5 : SSL_EXPORT
+                            TLS1_KRB5_RC4_40_MD5 : SSL_EXPORT
+                            TLS1_RSA_EXPORT1024_WITH_RC4_56_MD5 : SSL_EXPORT
+                            TLS1_RSA_EXPORT1024_WITH_RC2_CBC_56_MD5 : SSL_EXPORT
+                            TLS1_RSA_EXPORT1024_WITH_DES_CBC_SHA : SSL_EXPORT
+                            TLS1_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA : SSL_EXPORT
+                            TLS1_DHE_DSS_EXPORT1024_WITH_RC4_56_SHA : SSL_EXPORT
+                            TLS1_RSA_WITH_SEED_SHA : SSL_NOT_EXP
+                            TLS1_DH_DSS_WITH_SEED_SHA : SSL_NOT_EXP
+                            TLS1_DH_RSA_WITH_SEED_SHA : SSL_NOT_EXP
+                            TLS1_DHE_DSS_WITH_SEED_SHA : SSL_NOT_EXP
+                            TLS1_DHE_RSA_WITH_SEED_SHA : SSL_NOT_EXP
+                            TLS1_ADH_WITH_SEED_SHA : SSL_NOT_EXP
+                            TLS1_ECDH_ECDSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            TLS1_ECDHE_ECDSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            TLS1_ECDH_RSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            TLS1_ECDHE_RSA_WITH_NULL_SHA : SSL_NOT_EXP
+                            TLS1_ECDH_anon_WITH_NULL_SHA : SSL_NOT_EXP
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.66286</id>
+                        <data>
+
+                            nmap thinks ssl|imap is running on this port
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10330</id>
+                        <data>
+
+                            An unknown service is running on this port through SSL.
+                            It is usually reserved for IMAPS
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10330</id>
+                        <data>
+
+                            A TLSv1 server answered on this port
+
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="tcp" portid="143">
+                    <service name="imap" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.11414</id>
+                        <data>
+
+                            The remote imap server banner is :
+                            * OK Dovecot ready.
+
+                            Versions and types should be omitted where possible.
+                            Change the imap banner to something generic.
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.66286</id>
+                        <data>
+
+                            nmap thinks imap is running on this port
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10330</id>
+                        <data>
+
+                            An unknown service is running on this port.
+                            It is usually reserved for IMAP
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="tcp" portid="443">
+                    <service name="https" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.11213</id>
+                        <data>
+
+
+                            Synopsis :
+
+                            Debugging functions are enabled on the remote HTTP server.
+
+                            Description :
+
+                            The remote webserver supports the TRACE and/or TRACK methods. TRACE and TRACK
+                            are HTTP methods which are used to debug web server connections.   
+
+                            It has been shown that servers supporting this method are subject to
+                            cross-site-scripting attacks, dubbed XST for &quot;Cross-Site-Tracing&quot;, when
+                            used in conjunction with various weaknesses in browsers. 
+
+                            An attacker may use this flaw to trick your legitimate web users to give
+                            him their credentials. 
+
+                            Solution :
+
+                            Disable these methods.
+
+                            See also :
+
+                            http://www.kb.cert.org/vuls/id/867593
+
+                            Risk factor :
+
+                            Low / CVSS Base Score : 2 
+                            (AV:R/AC:L/Au:NR/C:P/A:N/I:N/B:N)
+
+                            Plugin output :
+
+
+                            Solution : 
+                            Add the following lines for each virtual host in your configuration file :
+
+                            RewriteEngine on
+                            RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+                            RewriteRule .* - [F]
+
+
+                            CVE : CVE-2004-2320, CVE-2003-1567 
+                            BID : 9506, 9561, 11604
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.80109</id>
+                        <data>
+
+                            w3af could not be found in your system path.
+                            OpenVAS was unable to execute w3af and to perform the scan you
+                            requested.
+                            Please make sure that w3af is installed and that w3af_console is
+                            available in the PATH variable defined for your environment.
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Hole</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900842</id>
+                        <data>
+
+
+                            Overview: The host is running Apache and is prone to Command Injection
+                            vulnerability.
+
+                            Vulnerability Insight:
+                            The flaw is due to error in the mod_proxy_ftp module which can be exploited
+                            via vectors related to the embedding of these commands in the Authorization
+                            HTTP header.
+
+                            Impact:
+                            Successful exploitation could allow remote attackers to bypass intended access
+                            restrictions in the context of the affected application, and can cause the
+                            arbitrary command injection.
+
+                            Impact Level: Application
+
+                            Affected Software/OS:
+                            Apache HTTP Server on Linux.
+
+                            Fix: Upgrade to Apache HTTP Server version 2.2.15 or later
+                            For updates refer, http://www.apache.org/
+
+                            References:
+                            http://intevydis.com/vd-list.shtml
+                            http://httpd.apache.org/docs/2.0/mod/mod_proxy_ftp.html
+
+                            CVSS Score:
+                            CVSS Base Score     : 7.5 (AV:N/AC:L/Au:NR/C:P/I:P/A:P)
+                            CVSS Temporal Score : 6.7
+                            Risk factor: High
+                            CVE : CVE-2009-3095
+                            BID : 36254
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Warning</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900107</id>
+                        <data>
+
+
+                            Overview : The host is running Apache, which is prone to cross-site scripting
+                            vulnerability.
+
+                            Vulnerability Insight :
+
+                            Input passed to the module mod_proxy_ftp with wildcard character
+                            is not properly sanitized before returning to the user.
+
+                            Impact : Remote attackers can execute arbitrary script code.
+
+                            Impact Level : Application
+
+                            Affected Software/OS :
+                            Apache 2.0.0 to 2.0.63 and Apache 2.2.0 to 2.2.9 on All Platform
+
+                            ***
+                            Note: The script might report a False Positive as it is only checking for 
+                            the vulnerable version of Apache. Vulnerability is only when mod_proxy 
+                            and mod_proxy_ftp is configured with the installed Apache version. 
+                            ***
+
+                            Fix : Fixed is available in the SVN repository,
+                            http://svn.apache.org/viewvc?view=rev&amp;revision=682871
+                            http://svn.apache.org/viewvc?view=rev&amp;revision=682868
+
+                            References :
+                            http://httpd.apache.org/
+                            http://www.securityfocus.com/archive/1/495180
+                            http://httpd.apache.org/docs/2.0/mod/mod_proxy_ftp.html
+
+                            CVSS Score :
+                            CVSS Base Score     : 5.8 (AV:N/AC:M/Au:NR/C:P/I:P/A:N)
+                            CVSS Temporal Score : 4.5
+                            Risk factor : Medium
+                            CVE : CVE-2008-2939
+                            BID : 30560
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Warning</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900499</id>
+                        <data>
+
+
+
+                            Overview: This host is running Apache Web Server and is prone to
+                            Information Disclosure Vulnerability.
+
+                            Vulnerability Insight:
+                            This flaw is caused due to an error in &apos;mod_proxy_ajp&apos; when handling
+                            improperly malformed POST requests.
+
+                            Impact:
+                            Successful exploitation will let the attacker craft a special HTTP POST
+                            request and gain sensitive information about the web server.
+
+                            Impact level: Application
+
+                            Affected Software/OS:
+                            Apache HTTP Version 2.2.11
+
+                            Workaround:
+                            Update mod_proxy_ajp.c through SVN Repository (Revision 767089)
+                            http://www.apache.org/dist/httpd/patches/apply_to_2.2.11/PR46949.diff
+
+                            Fix: Upgrade to Apache HTTP Version 2.2.15 or later
+                            For further updates refer, http://httpd.apache.org/download.cgi
+
+                            References:
+                            http://secunia.com/advisories/34827
+                            http://xforce.iss.net/xforce/xfdb/50059
+                            http://svn.apache.org/viewvc/httpd/httpd/trunk/CHANGES?r1=766938&amp;r2=767089
+
+                            CVSS Score:
+                            CVSS Base Score     : 5.0 (AV:N/AC:L/Au:NR/C:P/I:N/A:N)
+                            CVSS Temporal Score : 4.0
+                            Risk factor: Medium
+                            CVE : CVE-2009-1191
+                            BID : 34663
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.14260</id>
+                        <data>
+
+                            Here is the Nikto report:
+                            - Could not find a valid nikto config file
+
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Warning</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900841</id>
+                        <data>
+
+
+                            Overview: The host is running Apache and is prone to Denial of Service
+                            vulnerability.
+
+                            Vulnerability Insight:
+                            The flaw is caused due to an error in &apos;ap_proxy_ftp_handler&apos; function in
+                            modules/proxy/proxy_ftp.c in the mod_proxy_ftp module while processing
+                            responses received from FTP servers. This can be exploited to trigger a
+                            NULL-pointer dereference and crash an Apache child process via a malformed
+                            EPSV response.
+
+                            Impact:
+                            Successful exploitation could allow remote attackers to cause a Denial of
+                            Service in the context of the affected application.
+
+                            Impact Level: Application
+
+                            Affected Software/OS:
+                            Apache HTTP Server version 2.0.x to 2.0.63 and and 2.2.x to 2.2.13 on Linux.
+
+                            Fix: Upgrade to Apache HTTP Server version 2.2.15 or later
+                            For updates refer, http://www.apache.org/
+
+                            References:
+                            http://intevydis.com/vd-list.shtml
+                            http://www.intevydis.com/blog/?p=59
+                            http://secunia.com/advisories/36549
+                            http://httpd.apache.org/docs/2.0/mod/mod_proxy_ftp.html
+
+                            CVSS Score:
+                            CVSS Base Score     : 5.4 (AV:N/AC:H/Au:NR/C:N/I:N/A:C)
+                            CVSS Temporal Score : 4.9
+                            Risk factor: Medium
+                            CVE : CVE-2009-3094
+                            BID : 36260
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.80110</id>
+                        <data>
+
+                            wapiti could not be found in your system path.
+                            OpenVAS was unable to execute wapiti and to perform the scan you
+                            requested.
+                            Please make sure that wapiti is installed and that wapiti is
+                            available in the PATH variable defined for your environment.
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10107</id>
+                        <data>
+
+                            The remote web server type is :
+
+                            Apache/2.2.3 (CentOS)
+
+
+                            Solution : You can set the directive &apos;ServerTokens Prod&apos; to limit
+                            the information emanating from the server in its response headers.
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10330</id>
+                        <data>
+
+                            A web server is running on this port through SSL
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10330</id>
+                        <data>
+
+                            A TLSv1 server answered on this port
+
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="tcp" portid="80">
+                    <service name="http" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Warning</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10302</id>
+                        <data>
+
+
+                            Some Web Servers use a file called /robot(s).txt to make search engines and
+                            any other indexing tools visit their WebPages more frequently and
+                            more efficiently.
+
+                            By connecting to the server and requesting the /robot(s).txt file, an
+                            attacker may gain additional information about the system they are
+                            attacking.
+
+                            Such information as, restricted directories, hidden directories, cgi script
+                            directories and etc. Take special care not to tell the robots not to index
+                            sensitive directories, since this tells attackers exactly which of your
+                            directories are sensitive.
+
+                            The file &apos;robots.txt&apos; contains the following:
+                            User-agent: *
+                            Disallow: /cgi
+
+
+                            Risk factor : Medium
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.11213</id>
+                        <data>
+
+
+                            Synopsis :
+
+                            Debugging functions are enabled on the remote HTTP server.
+
+                            Description :
+
+                            The remote webserver supports the TRACE and/or TRACK methods. TRACE and TRACK
+                            are HTTP methods which are used to debug web server connections.   
+
+                            It has been shown that servers supporting this method are subject to
+                            cross-site-scripting attacks, dubbed XST for &quot;Cross-Site-Tracing&quot;, when
+                            used in conjunction with various weaknesses in browsers. 
+
+                            An attacker may use this flaw to trick your legitimate web users to give
+                            him their credentials. 
+
+                            Solution :
+
+                            Disable these methods.
+
+                            See also :
+
+                            http://www.kb.cert.org/vuls/id/867593
+
+                            Risk factor :
+
+                            Low / CVSS Base Score : 2 
+                            (AV:R/AC:L/Au:NR/C:P/A:N/I:N/B:N)
+
+                            Plugin output :
+
+
+                            Solution : 
+                            Add the following lines for each virtual host in your configuration file :
+
+                            RewriteEngine on
+                            RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+                            RewriteRule .* - [F]
+
+
+                            CVE : CVE-2004-2320, CVE-2003-1567 
+                            BID : 9506, 9561, 11604
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.80109</id>
+                        <data>
+
+                            w3af could not be found in your system path.
+                            OpenVAS was unable to execute w3af and to perform the scan you
+                            requested.
+                            Please make sure that w3af is installed and that w3af_console is
+                            available in the PATH variable defined for your environment.
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Hole</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900842</id>
+                        <data>
+
+
+                            Overview: The host is running Apache and is prone to Command Injection
+                            vulnerability.
+
+                            Vulnerability Insight:
+                            The flaw is due to error in the mod_proxy_ftp module which can be exploited
+                            via vectors related to the embedding of these commands in the Authorization
+                            HTTP header.
+
+                            Impact:
+                            Successful exploitation could allow remote attackers to bypass intended access
+                            restrictions in the context of the affected application, and can cause the
+                            arbitrary command injection.
+
+                            Impact Level: Application
+
+                            Affected Software/OS:
+                            Apache HTTP Server on Linux.
+
+                            Fix: Upgrade to Apache HTTP Server version 2.2.15 or later
+                            For updates refer, http://www.apache.org/
+
+                            References:
+                            http://intevydis.com/vd-list.shtml
+                            http://httpd.apache.org/docs/2.0/mod/mod_proxy_ftp.html
+
+                            CVSS Score:
+                            CVSS Base Score     : 7.5 (AV:N/AC:L/Au:NR/C:P/I:P/A:P)
+                            CVSS Temporal Score : 6.7
+                            Risk factor: High
+                            CVE : CVE-2009-3095
+                            BID : 36254
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Warning</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900107</id>
+                        <data>
+
+
+                            Overview : The host is running Apache, which is prone to cross-site scripting
+                            vulnerability.
+
+                            Vulnerability Insight :
+
+                            Input passed to the module mod_proxy_ftp with wildcard character
+                            is not properly sanitized before returning to the user.
+
+                            Impact : Remote attackers can execute arbitrary script code.
+
+                            Impact Level : Application
+
+                            Affected Software/OS :
+                            Apache 2.0.0 to 2.0.63 and Apache 2.2.0 to 2.2.9 on All Platform
+
+                            ***
+                            Note: The script might report a False Positive as it is only checking for 
+                            the vulnerable version of Apache. Vulnerability is only when mod_proxy 
+                            and mod_proxy_ftp is configured with the installed Apache version. 
+                            ***
+
+                            Fix : Fixed is available in the SVN repository,
+                            http://svn.apache.org/viewvc?view=rev&amp;revision=682871
+                            http://svn.apache.org/viewvc?view=rev&amp;revision=682868
+
+                            References :
+                            http://httpd.apache.org/
+                            http://www.securityfocus.com/archive/1/495180
+                            http://httpd.apache.org/docs/2.0/mod/mod_proxy_ftp.html
+
+                            CVSS Score :
+                            CVSS Base Score     : 5.8 (AV:N/AC:M/Au:NR/C:P/I:P/A:N)
+                            CVSS Temporal Score : 4.5
+                            Risk factor : Medium
+                            CVE : CVE-2008-2939
+                            BID : 30560
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Warning</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900499</id>
+                        <data>
+
+
+
+                            Overview: This host is running Apache Web Server and is prone to
+                            Information Disclosure Vulnerability.
+
+                            Vulnerability Insight:
+                            This flaw is caused due to an error in &apos;mod_proxy_ajp&apos; when handling
+                            improperly malformed POST requests.
+
+                            Impact:
+                            Successful exploitation will let the attacker craft a special HTTP POST
+                            request and gain sensitive information about the web server.
+
+                            Impact level: Application
+
+                            Affected Software/OS:
+                            Apache HTTP Version 2.2.11
+
+                            Workaround:
+                            Update mod_proxy_ajp.c through SVN Repository (Revision 767089)
+                            http://www.apache.org/dist/httpd/patches/apply_to_2.2.11/PR46949.diff
+
+                            Fix: Upgrade to Apache HTTP Version 2.2.15 or later
+                            For further updates refer, http://httpd.apache.org/download.cgi
+
+                            References:
+                            http://secunia.com/advisories/34827
+                            http://xforce.iss.net/xforce/xfdb/50059
+                            http://svn.apache.org/viewvc/httpd/httpd/trunk/CHANGES?r1=766938&amp;r2=767089
+
+                            CVSS Score:
+                            CVSS Base Score     : 5.0 (AV:N/AC:L/Au:NR/C:P/I:N/A:N)
+                            CVSS Temporal Score : 4.0
+                            Risk factor: Medium
+                            CVE : CVE-2009-1191
+                            BID : 34663
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.14260</id>
+                        <data>
+
+                            Here is the Nikto report:
+                            - Could not find a valid nikto config file
+
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Warning</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900841</id>
+                        <data>
+
+
+                            Overview: The host is running Apache and is prone to Denial of Service
+                            vulnerability.
+
+                            Vulnerability Insight:
+                            The flaw is caused due to an error in &apos;ap_proxy_ftp_handler&apos; function in
+                            modules/proxy/proxy_ftp.c in the mod_proxy_ftp module while processing
+                            responses received from FTP servers. This can be exploited to trigger a
+                            NULL-pointer dereference and crash an Apache child process via a malformed
+                            EPSV response.
+
+                            Impact:
+                            Successful exploitation could allow remote attackers to cause a Denial of
+                            Service in the context of the affected application.
+
+                            Impact Level: Application
+
+                            Affected Software/OS:
+                            Apache HTTP Server version 2.0.x to 2.0.63 and and 2.2.x to 2.2.13 on Linux.
+
+                            Fix: Upgrade to Apache HTTP Server version 2.2.15 or later
+                            For updates refer, http://www.apache.org/
+
+                            References:
+                            http://intevydis.com/vd-list.shtml
+                            http://www.intevydis.com/blog/?p=59
+                            http://secunia.com/advisories/36549
+                            http://httpd.apache.org/docs/2.0/mod/mod_proxy_ftp.html
+
+                            CVSS Score:
+                            CVSS Base Score     : 5.4 (AV:N/AC:H/Au:NR/C:N/I:N/A:C)
+                            CVSS Temporal Score : 4.9
+                            Risk factor: Medium
+                            CVE : CVE-2009-3094
+                            BID : 36260
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.11032</id>
+                        <data>
+
+                            The following directories were discovered:
+                            /error, /images, /manual
+
+                            While this is not, in and of itself, a bug, you should manually inspect 
+                            these directories to ensure that they are in compliance with company
+                            security standards
+
+                            Other references : OWASP:OWASP-CM-006
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.80110</id>
+                        <data>
+
+                            wapiti could not be found in your system path.
+                            OpenVAS was unable to execute wapiti and to perform the scan you
+                            requested.
+                            Please make sure that wapiti is installed and that wapiti is
+                            available in the PATH variable defined for your environment.
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10107</id>
+                        <data>
+
+                            The remote web server type is :
+
+                            Apache/2.2.3 (CentOS)
+
+
+                            Solution : You can set the directive &apos;ServerTokens Prod&apos; to limit
+                            the information emanating from the server in its response headers.
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.10330</id>
+                        <data>
+
+                            A web server is running on this port
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="">
+                    <service name="general/tcp" method="nessus" conf="3" />
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.19506</id>
+                        <data>
+
+                            Information about this scan : 
+
+                            OpenVAS version : 3.1.3.
+                            Plugin feed version : 201012131349
+                            Type of plugin feed : OpenVAS NVT Feed
+                            Scanner IP : 192.168.0.104
+                            Port scanner(s) : openvas_tcp_scanner 
+                            Port range : default
+                            Thorough tests : no
+                            Experimental tests : no
+                            Paranoia level : 1
+                            Report Verbosity : 1
+                            Safe checks : no
+                            Max hosts : 20
+                            Max checks : 4
+                            Scan Start Date : 2010/12/14 0:14
+                            Scan duration : 1860 sec
+
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.51662</id>
+                        <data>
+
+                            Here is the route from 192.168.0.104 to 192.168.0.104
+
+                            192.168.0.104
+
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.90003</id>
+                        <data>
+
+
+                            This script connects to SLAD on a remote host to fetch
+                            the result from scripts started earlier.
+                            To work properly, this script requires to be provided
+                            with a valid SSH login by means of an SSH key with pass-
+                            phrase if the SSH public key is passphrase-protected, or
+                            a password to log in.
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900239</id>
+                        <data>
+
+                            Open TCP ports are 443, 633, 110, 111, 993, 22, 9390, 995, 25, 3306, 143, 80
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.902217</id>
+                        <data>
+
+
+                            Overview: This host has critical security update missing according to
+                            Microsoft Bulletin MS10-045.
+
+                            Vulnerability Insight:
+                            The flaw is caused by an error when processing file attachments which are
+                            attached using the &apos;ATTACH_BY_REFERENCE&apos; value of the &apos;PR_ATTACH_METHOD&apos;
+                            property.
+
+                            Impact:
+                            Successful exploitation could allow remote attackers to execute arbitrary
+                            code by sending a specially crafted email attachment to an affected system.
+
+                            Impact Level: System/Application
+
+                            Affected Software/OS:
+                            Microsoft Office Outlook 2002/2003/2007
+
+                            Fix:
+                            Run Windows Update and update the listed hotfixes or download and
+                            update mentioned hotfixes in the advisory from the below link,
+                            http://www.microsoft.com/technet/security/bulletin/ms10-045.mspx
+
+                            References:
+                            http://www.vupen.com/english/advisories/2010/1800
+                            http://www.microsoft.com/technet/security/bulletin/ms10-045.mspx 
+                            CVE : CVE-2010-0266
+                            BID : 41446
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.90002</id>
+                        <data>
+
+
+                            This script connects to SLAD on a remote host to run
+                            remote scanners.
+                            To work properly, this script requires to be provided
+                            with a valid SSH login by means of an SSH key with pass-
+                            phrase if the SSH public key is passphrase-protected, or
+                            a password to log in.
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900498</id>
+                        <data>
+
+                            Apache Web Server version 2.2.3 was detected on the host
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.900498</id>
+                        <data>
+
+                            Apache Web Server version 2.2.3 was detected on the host
+
+                        </data>
+                    </information>
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.102002</id>
+                        <data>
+
+                            ICMP based OS fingerprint results: 
+
+                            Linux Kernel 2.6.11 (accuracy 92%)
+                            Linux Kernel 2.6.10 (accuracy 92%)
+                            Linux Kernel 2.6.9 (accuracy 92%)
+                            Linux Kernel 2.6.8 (accuracy 92%)
+                            Linux Kernel 2.6.7 (accuracy 92%)
+                            Linux Kernel 2.6.6 (accuracy 92%)
+                            Linux Kernel 2.6.5 (accuracy 92%)
+                            Linux Kernel 2.6.4 (accuracy 92%)
+                            Linux Kernel 2.6.3 (accuracy 92%)
+                            Linux Kernel 2.6.2 (accuracy 92%)
+                            Linux Kernel 2.6.1 (accuracy 92%)
+                            Linux Kernel 2.6.0 (accuracy 92%)
+                            Linux Kernel 2.4.30 (accuracy 92%)
+                            Linux Kernel 2.4.29 (accuracy 92%)
+                            Linux Kernel 2.4.28 (accuracy 92%)
+                            Linux Kernel 2.4.27 (accuracy 92%)
+                            Linux Kernel 2.4.26 (accuracy 92%)
+                            Linux Kernel 2.4.25 (accuracy 92%)
+                            Linux Kernel 2.4.24 (accuracy 92%)
+                            Linux Kernel 2.4.23 (accuracy 92%)
+                            Linux Kernel 2.4.22 (accuracy 92%)
+                            Linux Kernel 2.4.21 (accuracy 92%)
+                            Linux Kernel 2.4.20 (accuracy 92%)
+                            Linux Kernel 2.4.19 (accuracy 92%)
+                            Linux Kernel 2.0.36 (accuracy 92%)
+                            Linux Kernel 2.0.34 (accuracy 92%)
+                            Linux Kernel 2.0.30 (accuracy 92%)
+
+
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="">
+                    <service name="general/SMBClient" method="nessus" conf="3" />
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.90011</id>
+                        <data>
+
+                            Error getting SMB-Data -&gt; CONNECTION TO 192.168.0.104 FAILED (ERROR NT_STATUS_CONNECTION_REFUSED)
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="">
+                    <service name="general/HOST-T" method="nessus" conf="3" />
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.810003</id>
+                        <data>
+
+                            traceroute:192.168.0.104
+                            ports:443,633,110,111,993,22,9390,995,25,3306,143,80
+
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="">
+                    <service name="general/CPE-T" method="nessus" conf="3" />
+                    <information>
+                        <severity>Log Message</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.810002</id>
+                        <data>
+
+                            192.168.0.104|cpe:/a:apache:http_server:2.2.3
+
+
+                        </data>
+                    </information>
+                </port>
+                <port protocol="udp" portid="629">
+                    <service name="3com-amp3" method="nessus" conf="3" />
+                    <information>
+                        <severity>Security Note</severity>
+                        <id>1.3.6.1.4.1.25623.1.0.11111</id>
+                        <data>
+
+                            RPC program #100024 version 1 &apos;status&apos; is running on this port
+
+
+                        </data>
+                    </information>
+                </port>
+            </ports>
+        </result>
+    </results>
+</report>

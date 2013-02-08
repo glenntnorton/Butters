@@ -1,0 +1,150 @@
+body {
+    background:#666 url(../images/dark_gray_bg.png) repeat-x top; 
+    font-family: "Lucinda Sans Unicode", Arial, Helvetica, sans-serif; 
+    font-size:75%; 
+    margin:0; 
+    padding:0;
+}
+
+div#body_container {
+    width:900px; 
+    margin:10px auto; 
+    padding:0 11px; 
+    background: url(../images/adam_bg.png) repeat-y center;
+}
+div#img_header {
+    background:url(../images/electricians-header-licensing.jpg) no-repeat top left; 
+    height:100px; 
+    width:900px; 
+    overflow:hidden;
+}
+
+div#body_holder {
+    background:#e6e6e6 url(../images/gray_fade.png) repeat-x top; 
+    padding:8px 0;
+}
+
+
+div.notice {
+    padding: 8px; 
+    background:#FFFFF3 url(../images/adam_notice_corner.png) no-repeat top left; 
+    border:1px solid #EAD77B; 
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+div#main_col {
+    margin:0 8px 0 8px; 
+    padding:8px; 
+    background-color:#FFF;
+}
+
+form {
+    margin:0; 
+    padding:0;
+}
+form label {
+    font-weight:bold;
+}
+form div.itemHolder {
+    padding:0.75em 2px; 
+    border-top:0px dotted #666; 
+    position:relative;
+}
+form input.button {
+    padding:2px 8px; 
+    border:1px outset #f90; 
+    background-color:#333; 
+    color:#fff;
+}
+form input.submit {
+    font-weight:bold; 
+    border:1px outset #f60; 
+    background-color:#DB891A; 
+}
+
+form input.button:hover {text-decoration:underline; background-color:#DB891A;}
+form input.submit:hover {text-decoration:underline; background-color:#C87C17;}
+form input.text {padding:4px 2px; margin:0 0.5em 0.25em 0; font-family:Tahoma, "Lucida Grande", Helvetica, sans-serif; font-size:100%; border:2px solid #ccc;}
+form select, form textarea {padding:4px 2px; margin:0 0.5em 0.25em 0; font-family:Tahoma, "Lucida Grande", Helvetica, sans-serif; font-size:100%; border:2px solid #ccc;}
+form .width {width:350px; margin-right:0;}
+form .width_half {width:243px; margin-right:0;}
+form input:focus, form select:focus, form textarea:focus {border-color:#DB891A;}
+form div.inputDirection {display:none; background-color:#233891; color:#fff; padding:5px; width:190px; position:absolute; top:2.7em; right:-200px; font-size:0.8em; border-bottom:1px solid #000647;}
+form div.inputDirection div.check {position:absolute; top:0; left:-12px; width:12px; height:12px; background:url(../images/coolcheck.gif) no-repeat; overflow:hidden; } 
+form div.inputDesc {background-color:#FAF2BE; color:#666; font-size:0.8em; padding:3px 4px 4px 5px; line-height:1.3em; margin:0.5em 0 0 0; border: solid #EAD77B; border-width:0 1px 1px 0;}
+
+div#header_per {background:url(../images/electricians-header-permitting.jpg) no-repeat top left; height:100px; width:900px; overflow:hidden;}
+div#header h1, div#header h2, div#header_per h1, div#header_per h2 {visibility:hidden;}
+
+div#side_col {margin-left:8px; width:130px; float:left;}
+
+
+ul#top_nav_list {margin:0 0 0 180px; padding:0;}
+ul#top_nav_list li {margin:0 2px 0 0; padding:0; list-style:none; float:left; display:inline;}
+ul#top_nav_list li a, ul#top_nav_list li a:visited {display:block; float:left; padding:6px 8px 4px 8px; margin-top:4px; color:#fff; text-decoration:none; font-weight:bold; -moz-border-radius:4px 4px 0 0; -webkit-border-radius:4px 4px 0 0;}
+ul#top_nav_list li a:hover, ul#top_nav_list li a:active, ul#top_nav_list li a.selected, ul#top_nav_list li a.selected:visited {background:#ccc url(../images/adam_dkgy_fade.png) repeat-x top; color:#000647;}
+
+ul#side_nav {margin:0; padding:0;}
+ul#side_nav li {margin:0; padding:0; list-style:none;}
+ul#side_nav li a, ul#side_nav li a:visited {display:block; padding:4px 8px; text-decoration:none; border-bottom:1px solid #fff;color:#333;}
+ul#side_nav li a:hover, ul#side_nav li a.selected {background-color:#fff;}
+ul#side_nav li a:focus, ul#side_nav li a:active {outline:none;}
+ul#side_nav li a.haskids {background-image:url(../images/arrow-down-light.png); background-repeat:no-repeat; background-position:right center; }
+ul#side_nav li a.haskids:hover {background-image:url(../images/arrow-down-dark.png); background-repeat:no-repeat; background-position:right center; }
+ul#side_nav li a.haskids.selected {background-image:url(../images/arrow-up-light.png); background-repeat:no-repeat; background-position:right center; }
+ul#side_nav li a.haskids.selected:hover {background-image:url(../images/arrow-up-dark.png); background-repeat:no-repeat; background-position:right center; }
+ul#side_nav li ul {display:none; margin:4px 0 8px 0; padding:0;}
+ul#side_nav li ul li {margin:0 0 0 10px; padding:1px 0;}
+ul#side_nav li ul li a, ul#side_nav li ul li a:visited {margin:0 8px 0 0; padding:0 2px 0 5px; border-bottom:none; border-left:5px solid #376077;}
+ul#side_nav li ul li a:hover, ul#side_nav li ul li a.selected, ul#side_nav li ul li a.selected:visited {border-left:5px solid #D28923;}
+
+/*type and tags*/
+h1, h2, h3, h4, h5, h6 {font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:normal; margin:0; padding:0;}
+h1 {font-size:1em; text-transform:uppercase; font-weight:bold; color:#666; margin-bottom:1em; padding-bottom:2px; border-bottom:1px solid #ccc;}
+h2 {font-size:1.3em; font-weight:bold; margin-bottom:0.75em; padding-top:0.5em; color:#0B1665;}
+h3 {font-size:1.15em; margin-bottom:0.9em; color:#343434;}
+.steps_holder h3 {color:#343434;}
+.steps_holder h3 {font-weight:bold;}
+.dash {font-size:1.15em; font-weight:bold; margin-bottom:0.75em; padding-top:0.5em; color:#0B1665;}
+.dashgray {font-size:1.15em; font-weight:bold; margin-bottom:0.75em; padding-top:0.5em; color:#999999;}
+
+p {margin:0 0 1em 0; line-height:1.5em;}
+ul, ol {margin:0 0 1em 0; padding:0;}
+ul li {margin:2px 0 2px 30px; padding:0;}
+ol li {margin:2px 0 2px 35px; padding:0;}
+
+table.data {}
+table.data th {border-bottom:1px solid #999; vertical-align:bottom; padding:3px 2px 1px 2px;}
+table.data td {border-bottom:1px dotted #999; vertical-align:top; padding:3px 2px;}
+table.data tr:hover td {background-color:#D8DCF3;}
+
+div.body_col_1 {float:left; width:346px; padding-right:9px; border-right:1px solid #e6e6e6;}
+div.body_col_2 {margin-left:366px; padding-left:10px;}
+
+div.right {width:200px; float:right;}
+div.left {margin-right:200px;}
+
+
+div.sysnotice {padding:8px; background:#FAF2BE url(../images/adam_notice_corner.png) no-repeat top left; border:2px solid #BB0000; margin-bottom:8px;}
+
+div.steps_holder {border-top:3px solid #000647; padding-top:1px;}
+div.steps {background-color:#e5edf7;}
+div.step_intro {padding:15px; background-color:#dae5f4;}
+div.form_holder {padding-top:1em;}
+ol.step_list {margin:0; padding:0;}
+ol.step_list li {margin:0; padding:0; list-style-position:inside; padding:0.35em 1em;}
+ol.step_list li.selected {font-style:italic; font-weight:bold; background-color:#457fc9; color:#FFFFFF;}
+
+
+a, a:visited {color:#4F8AAA;}
+a:hover {}
+div.clear {clear:both;}
+
+/*Uniqueskies */
+
+a#new_contractor_button, a#new_contractor_button:visited {display:block; width:270px; height:68px; overflow:hidden; text-indent:-5000px; background:url(../images/adam-new-contractor.png) no-repeat top left;}
+a#new_contractor_button:hover {background:url(../images/adam-new-contractor.png) no-repeat bottom left;}
+a#new_homeowner_button, a#new_homeowner_button:visited {display:block; width:270px; height:68px; overflow:hidden; text-indent:-5000px; background:url(../images/adam-new-homeowner.png) no-repeat top left;}
+a#new_homeowner_button:hover {background:url(../images/adam-new-homeowner.png) no-repeat bottom left;}
+
+#box {border:1px solid #333333;}

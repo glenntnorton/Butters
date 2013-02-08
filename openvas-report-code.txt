@@ -1,0 +1,54 @@
+Python 2.5.4 (r254:67916, Dec 23 2008, 15:10:54) [MSC v.1310 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+
+    ****************************************************************
+    Personal firewall software may warn about the connection IDLE
+    makes to its subprocess using this computer's internal loopback
+    interface.  This connection is not visible on any external
+    interface and no data is sent to or received from the Internet.
+    ****************************************************************
+    
+IDLE 1.2.4      
+>>> from elementtreee import ElementTree as et
+
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    from elementtreee import ElementTree as et
+ImportError: No module named elementtreee
+>>> from elementtree import ElementTree as et
+>>> from com.finnean.io.reader import XMLReader
+>>> reader = XMLReader.XMLReader(r'D:\Lib\results.xml')
+>>> root = et.XML(reader.read())
+>>> results = root.findall('results')
+>>> from elementtree.ElementTreee import tostring
+
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    from elementtree.ElementTreee import tostring
+ImportError: No module named ElementTreee
+>>> from elementtree.ElementTree import tostring
+>>> tostring(results)
+
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    tostring(results)
+  File "D:\Python\lib\site-packages\elementtree\ElementTree.py", line 1006, in tostring
+    ElementTree(element).write(file, encoding)
+  File "D:\Python\lib\site-packages\elementtree\ElementTree.py", line 540, in __init__
+    assert element is None or iselement(element)
+AssertionError
+>>> tostring(results[0])
+>>> df = open(r'D:\Lib\new-results.xml', 'w')
+>>> df.write(repr(tostring(results[0])))
+>>> df.close()
+>>> df = open(r'D:\Lib\new-results.xml', 'w')
+>>> df.write(tostring(results[0]))
+>>> df.close()
+>>> df = open(r'D:\Lib\new-results.xml', 'w')
+>>> df.write('''<?xml version="1.0"?>\n''')
+>>> df.write('''<report>\n''')
+>>> df.write(tostring(results[0]))
+>>> df.write('''</report>\n''')
+>>> df.close()
+>>> 
+

@@ -1,0 +1,85 @@
+body {
+    background: #322 repeat-x top; 
+    font-family: "Lucinda Sans Unicode", Arial, Helvetica, sans-serif; 
+    font-size: 85%; 
+    margin: 0; 
+    padding: 0;
+}
+
+div#container {
+    width:500px; 
+    margin:10px auto; 
+    padding:0 11px; 
+    repeat-y center;
+}
+
+div#login-container {
+    width: 600px; 
+    margin: 10px auto; 
+    padding: 25px 5px; 
+    repeat-y center;
+}
+
+div#header {
+    background: no-repeat top left; 
+    height:100px; width: 500px; 
+    overflow:hidden;
+}
+
+div#body_holder {
+    background:#e6e6e6 repeat-x top; 
+    padding:8px 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lucinda Sans Unicode", Verdana, Arial, Helvetica, sans-serif; 
+    font-weight:normal; 
+    font-size: 120%; 
+    margin:0; 
+    padding:0;
+}
+
+div#body_holder {
+    background:#e6e6e6 repeat-x top; 
+    padding:8px 0;
+}
+
+div#main_col {
+    margin:0 8px 0 8px; 
+    padding:8px; 
+    background-color:#fff;
+}
+form input.button {padding:2px 8px; border:1px outset #f90; background-color:#EAA64A; color:#fff;}
+form input.submit {font-weight:bold; border:1px outset #f60; background-color:#DB891A; }
+form input.button:hover {text-decoration:underline; background-color:#DB891A;}
+form input.submit:hover {text-decoration:underline; background-color:#C87C17;}
+form input.text {padding:4px 2px; margin:0 0.5em 0.25em 0; font-family:Tahoma, "Lucida Grande", Helvetica, sans-serif; font-size:100%; border:2px solid #ccc;}
+form div.itemHolder {padding:0.75em 2px; border-top:0px dotted #666; position:relative;}
+form div.inputHolder {}
+
+div#popup {
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    -moz-opacity:0.75;
+    -khtml-opacity: 0.75;
+    opacity: 0.75;
+    filter:alpha(opacity=75);
+}
+
+div#window {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    background: #ffffff;
+    position: absolute;
+    top: 200px;
+    left: 25%;
+}
+div.growlUI { background: url(check48.png) no-repeat 10px 10px }
+div.growlUI h1, div.growlUI h2 {
+	color: white; padding: 5px 5px 5px 75px; text-align: left
+}
+

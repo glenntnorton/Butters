@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Framework</title>
+<link rel="stylesheet" type="text/css" href="new.css" media="screen, projection">
+<script language="Javascript" type="text/javascript" src="jquery.js"></script> 
+<script language="Javascript" type="text/javascript" src="jquery.blockUI.js"></script> 
+ <script type="text/javascript">
+$(document).ready(function() { 
+   $('#demo12').click(function() { 
+       $.growlUI('Growl Notification', 'Have a nice day!'); 
+   }); 
+});
+
+$(document).ready(function() { 
+
+    $('#test').click(function() { 
+        $.blockUI({ message: $('#logout'), css: { width: '325px', padding: '10px' } }); 
+    }); 
+
+    $('#yes').click(function() { 
+        // update the block message 
+        $.blockUI({ message: "<h1>Logging out...</h1>" }); 
+
+        $.ajax({ 
+            url: 'test.html', 
+            cache: false, 
+            complete: function() { 
+                // unblock when remote call returns 
+                $.unblockUI(); 
+                window.location.href = 'logout.html';
+            } 
+        }); 
+    }); 
+
+    $('#no').click(function() { 
+        $.unblockUI(); 
+        return false; 
+    }); 
+
+}); 
+</script> 
+</head>
+
+<body>
+<div id="login-container">
+    <div id="body_holder">
+        <div id="main_col">
+            <h1>Login or create a new account:</h1>
+	    <h2>Login</h2>
+	</div>
+       
+        <form name="new_account" method="post" action="dps.cgi?/LicensingApplication/new_account/newAccount/None">
+            <div class="inputHolder">
+                <input type="button" class="button submit" value="Create a New Account" onclick="newAccount(this.form);"/>
+	    </div>
+	</form>
+        <div class="clear"></div>
+    </div>
+    
+<input id="test" type="submit" value="Logout" /> 
+ 
+... 
+ 
+<div id="logout" style="display:none; cursor: default"> 
+        <h1>Are you sure you wish to log out?.</h1> 
+        <input type="button" id="yes" value="Yes" /> 
+        <input type="button" id="no" value="No" /> 
+</div> 
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Finnean-SSC Security | New Port Scheme</title>
+    <meta http-equiv="Content-Language" content="English" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <h1><a href="#">Finnean-SSC Security Center</a></h1>
+        <h2>Take Control</h2>
+    </div>
+
+    <div id="content">
+        <div class="right"> 
+            <h2><a href="#">New Port Scheme</a></h2>
+                <div class="articles">
+                    <form name="" method="post" action="save_new_port_scheme.py">
+                        <div>
+                            <div class="itemHolder">
+                                <label for="last_name">Name for this scheme</label><br>
+                                <input id="name" name="name" type="text" maxlength="75" class="text width">
+                            </div>
+                            <div class="itemHolder">
+                                <label for="ip_addresses">IP Addresses (Enter one IP Address per line)</label><br>
+                                <textarea id="ip_addresses" name="ip_addresses" cols="30" rows="5" class="text
+                                    width"></textarea>
+                            </div>
+                            <div class="itemHolder">
+                                <label for="scan">Type of Scan</label><br>
+                                <select name="scan">
+                                    <option value="Slow Thorough Scan">Slow Thorough Scan</option>
+                                    <option value="Normal Scan">Normal Scan</option>
+                                    <option value="Fast Traceroute Scan">Fast Traceroute Scan</option>
+                                    <option value="Light Scan">Light Scan</option>
+                                    <option value="Quick Ping Scan">Quick Ping Scan</option>
+                                    <option value="Concentrated Scan With No Ping">Concentrated Scan With No Ping</option>
+                                    <option value="Full TCP Scan">Full TCP Scan</option>
+                                    <option value="Full UDP Scan">Full UDP Scan</option>
+                                </select>
+                            </div>
+                            <div class="itemHolder">
+                                <input type="submit" class="submit" value="Save This Scheme">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+
+        <div class="left"> 
+            <h2>Welcome :</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="login.html">Login</a></li> 
+                <li><a href="new_account.html">Create New Account</a></li> 
+                <li><a href="#">Lost Password</a></li> 
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li><br>
+                <li><a href="#">Finnean-SSC Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+
+    <div id="footer">
+        Finnean-SSC
+    </div>
+</div>
+</body>
+</html>

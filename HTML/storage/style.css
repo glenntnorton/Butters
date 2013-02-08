@@ -1,0 +1,93 @@
+/* Page Styles */
+body { margin: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: #FAF4E4; }
+#page { text-align: center; width: 100%; }
+#design { width: 749px; margin-left: auto; margin-right: auto; text-align: left; background-image: url('../images/background-repeat.jpg'); background-repeat: repeat-y; margin-bottom: -5px; }
+#shadowMargins { margin-left: 16px; margin-right: 16px; }
+#banner { text-align: center; margin-bottom: 10px; padding-top:0px; }
+#spacer { float: left; width: 1px; }
+#content { margin-left: 10px; width: 686px; margin-right: 10px; float: left; }
+#footer { float: left; height: 41px; }
+
+/* Form Sections */
+label { font-weight: bold; }
+.unboldedLabel { font-weight: normal; }
+#messageText { text-align: center; }
+     #messageText input { margin-left: 5px; margin-right: 5px; font-size: 20px; text-align: center; text-transform: uppercase; }
+.formSection { width: 100%; border: 1px solid #393B3A; padding: 3px; float: left; clear: left; background-color: #FAF4E5; }
+.fifty { width: 50%; float: left; line-height: 150%; }
+.plateDisplay { width: 250px; float: left; text-align: center; }
+#plateDemo { position: relative; text-align: center; width: 500px; background-repeat: no-repeat; left: 93px; }
+     #charBox { position: absolute; top: 80px; text-align: center; left: 20px; clear: both; height: 120px; z-index: 4; }
+     #charBoxMC { position: absolute; top: 55px; text-align: center; left: 0px; clear: both; height: 84px; z-index: 5; }
+     #letter1, #letter2, #letter3, #letter4, #letter5, #letter6, #letter7, #letter8 { width: 58px; height: 120px; float: left; z-index: 4; }
+     #mletter1, #mletter2, #mletter3, #mletter4, #mletter5, #mletter6, #mletter7, #mletter8 { width: 41px; height: 84px; float: left; z-index: 5; }
+     #formButtons { position: relative; z-index: 20; }
+     #check { display: none; color: red; font-weight: bold; font-size: 150%; }
+     #available { display: none; color: green; font-weight: bold; font-size: 150%; }
+     #unavailable { display: none; color: red; font-weight: bold; font-size: 150%; }
+     #unavailableImage { position: absolute; top: 0px; z-index: 10; display: none; }
+     #continue { display: none; text-align: center; }
+     #availCheck { display: none; text-align: center; }
+
+
+/* Text Styles */
+
+p { margin-top: 0px; margin-bottom: 10px; line-height: 150%; }
+h1 { font-size: 200%; }
+h2 { font-size: 180%; }
+h3 { font-size: 160%; }
+h4 { font-size: 140%; }
+h5 { font-size: 120%; }
+h6 { font-size: 100%; }
+
+ul, li { margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; line-height: 150%; }
+ul { margin-bottom: 10px; }
+
+h1, h2, h3, h4, h5 ,h6 { margin-top: 0px; margin-bottom: 10px; color: #393B3A; }
+
+.smallItalic { font-size: 90%; font-style: italic; }
+.total { font-size: 120%; font-weight: bold; }
+.red { color: #CC0000; }
+
+.center { text-align: center; }
+.bold { font-weight: bold; }
+.noDisplay { display: none; }
+#instr1, #instr2, #instr3, #instr4, #instr5, #instr6, #instr7, #instr8, #instr9 { display: none; text-align: center; font-size: 150%; font-weight: bold; font-style: italic; margin-top: 10px; margin-bottom: 20px; }
+
+
+/* -- */
+.errLegend { 
+    background-color:#FFFFCC;
+    font-size: 13px; 
+    color: #FF0000; 
+    border: 2px solid #000000; 
+    vertical-align: 20%;
+    position: relative; 
+    left: 10px; 
+    top: -10px;
+}
+.errBox {
+    background-color:#BEBEBE;
+    color:#000000;
+    border: 3px solid #990000;
+    font-size: 13px; 
+    background-image: url(../images/imp1.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.errorField {
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #FF0000;
+    background-color: #FFFFCC;
+    padding: 2px;
+}
+.errorValue {
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px inset #FF0000;
+    background-color: #FFFFCC;
+    color: #FF0000;
+    padding: 2px;
+}

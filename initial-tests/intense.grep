@@ -1,0 +1,3 @@
+# Nmap 4.85BETA5 scan initiated Tue Dec 14 13:30:23 2010 as: nmap -oG intense.grep -p 1-65535 -T4 192.168.0.104 
+Host: 192.168.0.104 ()	Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///, 80/open/tcp//http///, 110/open/tcp//pop3///, 111/open/tcp//rpcbind///, 143/open/tcp//imap///, 443/open/tcp//https///, 633/open/tcp//unknown///, 993/open/tcp//imaps///, 995/open/tcp//pop3s///, 3306/open/tcp//mysql///, 9390/open/tcp/////, 9393/open/tcp/////	Ignored State: closed (65522)
+# Nmap done at Tue Dec 14 13:30:30 2010 -- 1 IP address (1 host up) scanned in 6.89 seconds

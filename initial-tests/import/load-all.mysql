@@ -1,0 +1,81 @@
+use plugin;
+
+# filename
+TRUNCATE filename;
+LOAD DATA LOCAL INFILE 'filename.csv'
+INTO TABLE filename
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n'
+(id, script_id, filename);
+
+# bugtraq
+TRUNCATE bugtraq;
+LOAD DATA LOCAL INFILE 'bugtraq.csv'
+INTO TABLE bugtraq
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n'
+(id, script_id, bugtraq_id);
+
+# cve
+TRUNCATE cve;
+LOAD DATA LOCAL INFILE 'cve.csv'
+INTO TABLE cve
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n'
+(id, script_id, cve_id);
+
+# version
+TRUNCATE version;
+LOAD DATA LOCAL INFILE 'version.csv'
+INTO TABLE version
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n'
+(id, script_id, version);
+
+# name
+TRUNCATE name;
+LOAD DATA LOCAL INFILE 'name.csv'
+INTO TABLE name
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n'
+(id, script_id, name);
+
+# description
+TRUNCATE description;
+LOAD DATA LOCAL INFILE 'description.csv'
+INTO TABLE description
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY 'XXX\n'
+(id, script_id, description);
+
+# solution
+TRUNCATE solution;
+LOAD DATA LOCAL INFILE 'solution.csv'
+INTO TABLE solution
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY 'XXX\n'
+(id, script_id, solution);
+
+# risk
+TRUNCATE risk;
+LOAD DATA LOCAL INFILE 'risk.csv'
+INTO TABLE risk
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n'
+(id, script_id, risk);
+
+# family
+TRUNCATE family;
+LOAD DATA LOCAL INFILE 'family.csv'
+INTO TABLE family
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n'
+(id, script_id, family);
+
+# category
+TRUNCATE category;
+LOAD DATA LOCAL INFILE 'category.csv'
+INTO TABLE category
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n'
+(id, script_id, category);

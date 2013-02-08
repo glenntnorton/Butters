@@ -1,0 +1,163 @@
+body {
+    background: #fff url(../images/bg.jpg) repeat-x;
+    font-family: "Lucinda Sans Unicode", Arial, Helvetica, sans-serif; 
+    font-size:75%; 
+    margin:0; 
+    padding:0;
+}
+
+div#body_container {
+    width:600px;
+    margin:80px auto; 
+}
+div#img_header {
+    background:url() no-repeat top left; 
+    height:100px; 
+    width:900px; 
+    overflow:hidden;
+}
+
+div#body_holder {
+    background:#fff url(../images/gray_fade.png) repeat-x top; 
+    padding: 10px 0;
+    background-color: #222;
+}
+
+
+div.notice {
+    padding: 8px; 
+    background:#FFFFF3 url(../images/notice_corner.png) no-repeat top left; 
+    border:1px solid #222; 
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+div#main_col {
+    margin:0 8px 0 8px; 
+    padding: 10px; 
+    background-color:#FFF;
+}
+
+form {
+    margin:0; 
+    padding:0;
+}
+form label {
+    font-weight:bold;
+}
+form div.itemHolder {
+    padding:0.75em 2px; 
+    border-top:0px dotted #666; 
+    position:relative;
+}
+form input.button {
+    padding:2px 8px; 
+    border:1px outset #f90; 
+    background-color:#eee; 
+    color:#000;
+}
+form input.submit {
+    font-weight:bold; 
+    border:1px outset #333; 
+    background-color:#BBB; 
+}
+
+form input.button:hover {
+    text-decoration:underline; 
+    background-color:#DB891A;
+}
+form input.submit:hover {
+    text-decoration:underline; 
+    background-color:#ddd;
+}
+form input.text {
+    padding:4px 2px; 
+    margin:0 0.5em 0.25em 0; 
+    font-family:"Lucida Sans Unicode", Tahoma, Helvetica, sans-serif; 
+    font-size:100%; 
+    border:2px solid #ccc;
+}
+form select, form textarea {
+    padding:4px 2px; 
+    margin:0 0.5em 0.25em 0; 
+    font-family:"Lucinda Sans Unicode", Tahoma, Helvetica, sans-serif; 
+    font-size:100%; 
+    border:2px solid #ccc;
+}
+form .width {
+    width:350px; 
+    margin-right:0;
+}
+form .width_half {
+    width:243px; 
+    margin-right:0;
+}
+form input:focus, form select:focus, form textarea:focus {
+    border-color:#333;
+}
+form div.inputDirection {
+    display:none; 
+    background-color:#233891; 
+    color:#fff; 
+    padding:5px; 
+    width:190px; 
+    position:absolute; 
+    top:2.7em; 
+    right:-200px; 
+    font-size:0.8em; 
+    border-bottom:1px solid #000647;
+}
+form div.inputDirection div.check {
+    position:absolute; 
+    top:0; 
+    left:-12px; 
+    width:12px; 
+    height:12px; 
+    background:url(../images/coolcheck.gif) no-repeat; 
+    overflow:hidden; 
+} 
+form div.inputDesc {
+    background-color:#FAFFF3; 
+    color:#666; 
+    font-size:0.8em; 
+    padding:3px 4px 4px 5px; 
+    line-height:1.3em; 
+    margin:0.5em 0 0 0; 
+    border: solid #111; 
+    border-width: 1px 0px 0px 1px;
+}
+
+/*type and tags*/
+h1, h2, h3, h4, h5, h6 {
+    font-family:Verdana, Arial, Helvetica, sans-serif; 
+    font-weight:normal; 
+    margin:0; 
+    padding:0;
+}
+h1 {
+    font-size:1em; 
+    text-transform:uppercase; 
+    font-weight:bold; 
+    color:#666; 
+    margin-bottom:1em; 
+    padding-bottom:2px; 
+    border-bottom:1px solid #ccc;
+}
+h2 {
+    font-size:1.3em; 
+    font-weight:bold; 
+    margin-bottom:0.75em; 
+    padding-top:0.5em; 
+    color:#0B1665;
+}
+h3 {
+    font-size:1.15em; 
+    margin-bottom:0.9em; 
+    color:#343434;
+}
+
+a, a:visited {
+    color:#4F8AAA;
+}
+div.clear {
+    clear:both;
+}
